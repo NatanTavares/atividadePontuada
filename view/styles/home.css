@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body, .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: #EFEFEF;
+  text-align: center;
+  padding: 1em 0;
+}
+
+header, nav {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  background-color: #444;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.4em 0.8em;
+  transition: .400ms;
+}
+
+.selected {
+  background-color: red;
+}
+
+nav a:hover {
+  background-color: #a30707b6;
+}
+
+.container {
+  margin-top: 1em;
+  justify-content: space-evenly;
+}
+
+p {
+  margin: .4em .2em;
+}
+
+.left, section, .right {
+  border-radius: 2px;
+  box-shadow: 0 0 .4em -.1em #BBB;
+  margin: 0 .2em;
+  padding: 0 .2em;
+}
+
+.left {
+  flex: 1;
+  min-width: 25vh;
+}
+
+section {
+  flex: 2;
+  min-width: 50vh;
+}
+
+.right {
+  flex: 1;
+  min-width: 25vh;
+}
+
+.left p, section p , .right p {
+  font-size: .9em;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}

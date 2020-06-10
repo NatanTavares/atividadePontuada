@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/contact.css">
+  <title>Sidnão Company</title>
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <p>Resize the browser window to see the reponsive effect.</p>
+  </header>
+    
+  <nav>
+      <a href="./home.html">Home</a>
+      <a href="./about.html">About</a>
+      <a class="selected" onclick="alert('You are already on the Contact page')">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section>
+      <h3>Tell us</h3>
+      <form action="#" method="post">
+        <fieldset>
+          <fieldset class="grupo">
+            <div class="campo">
+              <label for="nome">Name</label>
+              <input type="text" id="nome" name="nome" style="width: 10em" required>
+            </div>
+            
+            <div class="campo">
+              <label for="snome">Lastname</label>
+              <input type="text" id="snome" name="snome" style="width: 10em" value="">
+            </div>
+          </fieldset>
+
+          <div class="campo">
+            <label>Gender</label>
+            <label>
+              <input type="radio" name="sexo" value="masculino"> Male
+            </label>
+
+            <label>
+              <input type="radio" name="sexo" value="feminino"> Female
+            </label>
+          </div>
+
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" style="width: 20em" required>
+          </div>
+
+          <div class="campo">
+            <label for="telefone">Phone</label>
+            <input type="text" id="telefone" name="telefone" style="width: 10em" value="">
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Message</label>
+            <textarea rows="6" style="width: 20em" id="mensagem" name="mensagem" required></textarea>
+          </div>
+  
+          <button type="submit" name="submit">Submit</button>
+      </fieldset>
+    </form>
+    </section>
+  </div>
+
+  <footer>
+    <a href="https://github.com/NatanTavares" target="_black">&copy NatanTavares</a>
+  </footer>
+</body>
+</html>
